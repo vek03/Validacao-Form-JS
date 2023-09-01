@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script></script>
+</head>
+<body>
+    <h1>Formulário Teste - JS</h1>
+    </br>
+    <form action="" method="post">
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome"  oninput="MascaraNome(this)"/>
+        </div>
+
+        </br>
+
+        <div>
+          <label for="endereco">Endereço:</label>
+          <input type="text" name="endereco" id="endereco" />
+        </div>
+
+        </br>
+
+        <div>
+            <label for="bairro">Bairro:</label>
+            <input type="text" name="bairro" id="bairro" />
+        </div>
+
+        </br>
+
+        <div>
+            <label for="cep">CEP:</label>
+            <input type="text" name="cep" id="cep" oninput="MascaraCEP(this)"/>
+        </div>
+
+        </br>
+
+        <div>
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade" />
+        </div>
+
+        </br>
+
+        <div>
+            <label for="estado">Estado:</label>
+            <input type="text" name="estado" id="estado" />
+        </div>
+
+        </br>
+
+        <div>
+            <label for="telefone">Telefone Fixo:</label>
+            <input type="text" name="telefone" id="telefone" value="" oninput="MascaraTelefone(this)"/>
+        </div>
+
+        </br>
+
+        <div>
+            <label for="celular">Celular:</label>
+            <input type="text" name="celular" id="celular" oninput="MascaraCelular(this)"/>
+        </div>
+
+        </br>
+
+        <div>
+            <label for="rg">RG:</label>
+            <input type="text" name="rg" id="rg" oninput="MascaraRG(this)" />
+        </div>
+
+        </br>
+
+        <div>
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" oninput="MascaraCPF(this)"/>
+        </div>
+
+        </br>
+
+        <div>
+            <button type="button" name="btnEnviar" id="btnEnviar" onclick="validarForm()"> ENVIAR </button>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
